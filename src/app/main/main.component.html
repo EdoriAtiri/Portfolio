@@ -1,13 +1,39 @@
 <div class="flex flex-col gap-6">
   <fa-icon [icon]="faArrowDown" class="mx-auto"></fa-icon>
-  <div>
-    <div class="h-96 w-full bg-slate-500 p-6">
+  <div *ngFor="let project of projects">
+    <div class="h-96 w-full p-6 {{ project.color }}">
+      <div
+        class="border mockup-window bg-base-300 w-full h-full rounded-none rounded-t"
+      >
+        <div class="flex justify-center bg-base-200 h-full">
+          <img src="{{ project.desktopImage }}" alt="" class="object-cover" />
+        </div>
+      </div>
+    </div>
+
+    <div id="card-content" class="flex flex-col p-6 gap-2">
+      <h3 class="text-2xl font-bold text-gray-700">{{ project.title }}</h3>
+      <p class="text-lg font-bold text-gray-500">
+        {{ project.description }}
+      </p>
+      <a
+        href="#"
+        class="view relative w-fit after:absolute after:inset-0 after:transform after:-scale-y-50 after:transition-transform after:ease-linear after:duration-300 z-50 after:-z-10 after:{{
+          project.color
+        }}"
+        >View Project</a
+      >
+    </div>
+  </div>
+
+  <!-- <div>
+    <div class="h-96 w-full p-6 bg-slate-400">
       <div
         class="border mockup-window bg-base-300 w-full h-full rounded-none rounded-t"
       >
         <div class="flex justify-center bg-base-200 h-full">
           <img
-            src="../../assets//RestCountries-desktop.png"
+            src="../../assets/images/RestCountries-desktop.png"
             alt=""
             class="object-cover"
           />
@@ -17,10 +43,100 @@
 
     <div id="card-content" class="flex flex-col p-6 gap-2">
       <h3 class="text-2xl font-bold text-gray-700">Rest Countries</h3>
-      <p class="text-lg font-bold text-gray-500">
-        Discover interesting demographic facts about every single country
-      </p>
-      <a href="#">View Project</a>
+      <p class="text-lg font-bold text-gray-500"></p>
+      <a href="#" class="project_link after:bg-slate-200">View Project</a>
     </div>
   </div>
+
+
+  <div>
+    <div class="h-96 w-full p-6 bg-stone-400">
+      <div
+        class="border mockup-window bg-base-300 w-full h-full rounded-none rounded-t"
+      >
+        <div class="bg-base-200 h-full w-full grid place-items-center">
+          <img
+            src="../../assets/images/shortly_logo.svg"
+            alt=""
+            class="transform scale-150"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="card-content" class="flex flex-col p-6 gap-2">
+      <h3 class="text-2xl font-bold text-gray-700">Shortly</h3>
+      <p class="text-lg font-bold text-gray-500">Shorten Lenghty URL links</p>
+      <a href="#" class="project_link after:bg-stone-200">View Project</a>
+    </div>
+  </div>
+  
+  <div>
+    <div class="h-96 w-full p-6 bg-blue-400">
+      <div
+        class="border mockup-window bg-base-300 w-full h-full rounded-none rounded-t"
+      >
+        <div class="flex justify-center bg-base-200 h-full">
+          <img
+            src="../../assets/images/ImG Search-desktop.png"
+            alt=""
+            class="object-cover"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="card-content" class="flex flex-col p-6 gap-2">
+      <h3 class="text-2xl font-bold text-gray-700">ImG Search</h3>
+      <p class="text-lg font-bold text-gray-500">
+        Search free stock images powered by the unsplash API
+      </p>
+      <a href="#" class="project_link after:bg-blue-200">View Project</a>
+    </div>
+  </div>
+  
+  <div>
+    <div class="h-96 w-full p-6 bg-orange-400">
+      <div
+        class="border mockup-window bg-base-300 w-full h-full rounded-none rounded-t"
+      >
+        <div class="flex justify-center bg-base-200 h-full">
+          <img
+            src="../../assets/images/E-commerce-desktop.png"
+            alt=""
+            class="object-cover"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="card-content" class="flex flex-col p-6 gap-2">
+      <h3 class="text-2xl font-bold text-gray-700">Fall Sneakers</h3>
+      <p class="text-lg font-bold text-gray-500">Sneaker product page</p>
+      <a href="#" class="project_link after:bg-orange-200">View Project</a>
+    </div>
+  </div>
+ 
+  <div>
+    <div class="h-96 w-full p-6 bg-red-400">
+      <div
+        class="border mockup-window bg-base-300 w-full h-full rounded-none rounded-t"
+      >
+        <div class="bg-base-200 h-full w-full grid place-items-center">
+          <img
+            src="../../assets/images/manage_logo.svg"
+            alt=""
+            class="transform scale-150"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="card-content" class="flex flex-col p-6 gap-2">
+      <h3 class="text-2xl font-bold text-gray-700">Manage Landing</h3>
+      <p class="text-lg font-bold text-gray-500">Landing Page for Manage</p>
+      <a href="#" class="project_link after:bg-red-200">View Project</a>
+    </div>
+  </div> -->
+  <!--  -->
 </div>

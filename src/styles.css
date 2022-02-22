@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .project_link {
+    @apply relative w-fit after:absolute after:inset-0 after:transform after:-scale-y-50 after:transition-transform after:ease-linear after:duration-300 z-50 after:-z-10;
+  }
+}
