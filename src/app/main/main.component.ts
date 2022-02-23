@@ -9,7 +9,6 @@ import { project } from '../interfaces/project';
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent implements OnInit {
-  fiveHundred = '500';
   faArrowDown = faArrowDown;
   projects: project[] = Projects;
   constructor() {}

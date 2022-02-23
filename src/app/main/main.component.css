@@ -1,4 +1,4 @@
-.project_link:hover:after {
+.view:hover:after {
   height: 100%;
   transform: scaleY(100%);
 }
