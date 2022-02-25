@@ -1,14 +1,16 @@
-<div class="flex flex-col gap-6 md:gap-8 lg:gap-20 min-h-54 lg:min-h-96">
+<div class="flex flex-col gap-6 md:gap-8 lg:gap-20">
   <fa-icon [icon]="faArrowDown" class="mx-auto"></fa-icon>
   <div *ngFor="let project of projects" class="lg:flex lg:flex-row-reverse">
-    <div
-      class="h-full w-full lg:w-2/3 p-6 md:p-10 lg:p-16 {{ project.color }} "
-    >
+    <div class=" w-full lg:w-2/3 p-6 md:p-10 lg:p-16 {{ project.color }} ">
       <div
         class="border mockup-window bg-base-300 w-full h-full rounded-none rounded-t"
       >
-        <div class="flex justify-center bg-base-200 h-full">
-          <img src="{{ project.desktopImage }}" alt="" class="object-cover" />
+        <div class="flex justify-center bg-base-200">
+          <img
+            src="{{ project.desktopImage }}"
+            alt="{project.title}"
+            class="object-cover"
+          />
         </div>
       </div>
     </div>

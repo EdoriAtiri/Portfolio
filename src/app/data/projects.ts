@@ -13,8 +13,8 @@ export const Projects: project[] = [
   {
     id: 2,
     title: 'Shortly',
-    description: 'Shorten Lenghty url links',
-    desktopImage: '../../assets/images/shortly-desktop.png',
+    description: 'Shorten Lenghty URL links',
+    desktopImage: '../../assets/images/shortly-desktop-.png',
     mobileImage: '../../assets/images/UrlShortener-mobile.png',
     color: 'bg-stone-200',
   },
