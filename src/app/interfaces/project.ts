@@ -5,4 +5,7 @@ export interface project {
   desktopImage: string;
   mobileImage: string;
   color: string;
+  toggle: boolean;
+  live_url: string;
+  github_url: string;
 }

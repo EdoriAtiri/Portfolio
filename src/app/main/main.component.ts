@@ -14,4 +14,18 @@ export class MainComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  onClickView(item: number) {
+    for (let i = 0; i < this.projects.length; i++) {
+      if (this.projects[i] !== this.projects[item]) {
+        this.projects[i].toggle = false;
+      } else {
+        this.projects[item].toggle = !this.projects[item].toggle;
+      }
+    }
+  }
+
+  closeDialog(dialog: number) {
+    this.projects[dialog].toggle = false;
+  }
 }

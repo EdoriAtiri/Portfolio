@@ -21,7 +21,5 @@ export class FooterComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.date);
-  }
+  ngOnInit(): void {}
 }
