@@ -1,5 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import {
+  faHtml5,
+  faCss3,
+  faJs,
+  faAngular,
+  faBootstrap,
+  faGit,
+  faReact,
+  faNodeJs,
+} from '@fortawesome/free-brands-svg-icons';
 import { Projects } from '../data/projects';
 import { project } from '../interfaces/project';
 
@@ -51,8 +60,15 @@ import {
   ],
 })
 export class MainComponent implements OnInit {
-  faArrowDown = faArrowDown;
   projects: project[] = Projects;
+  faHtml5 = faHtml5;
+  faCss3 = faCss3;
+  faAngular = faAngular;
+  faBootstrap = faBootstrap;
+  faJs = faJs;
+  faGit = faGit;
+  faReact = faReact;
+  faNodeJs = faNodeJs;
   constructor() {}
 
   ngOnInit(): void {}

@@ -1,40 +1,38 @@
-<div class="flex w-full flex-col gap-10 dark:bg-gray-800 md:gap-12 lg:gap-20">
-  <fa-icon [icon]="faArrowDown" class="mx-auto my-6"></fa-icon>
+<div
+  class="flex w-full flex-col gap-10 dark:bg-gray-800 md:gap-12 lg:gap-20 xl:gap-44"
+>
+  <!-- <fa-icon [icon]="faArrowDown" class="mx-auto my-6"></fa-icon> -->
   <!--  -->
   <div
     *ngFor="let project of projects; index as i"
     class="relative lg:flex lg:flex-row-reverse"
   >
     <div
-      class=" shadow-md w-full lg:w-2/3 xl:w-3/4 p-6 md:p-10 lg:p-16 xl:p-20 dark:bg-gray-700 {{
+      class="  w-full lg:w-2/3 xl:w-3/4 p-6 md:p-10 lg:p-16 xl:p-20 dark:bg-gray-700 {{
         project.color
       }} "
     >
       <div
-        class="mockup-window h-full w-full rounded-none rounded-t border bg-base-300"
+        class="mockup-window h-full w-full rounded-none rounded-t border bg-base-300 shadow-lg xl:shadow-2xl"
       >
-        <div class="flex justify-center bg-base-200">
+        <figure class="flex justify-center bg-base-200 shadow-md">
           <img
             src="{{ project.desktopImage }}"
             alt="{project.title}"
             class="object-cover"
           />
-        </div>
+        </figure>
       </div>
     </div>
 
     <div
       id="card-content"
-      class="flex flex-col gap-2 p-6 leading-relaxed lg:w-1/3 lg:justify-center lg:pl-0 xl:w-1/4"
+      class="flex flex-col gap-2 p-6 leading-relaxed lg:w-1/3 lg:justify-center lg:gap-3 lg:pl-0 xl:w-1/4"
     >
-      <h3
-        class="text-xl font-bold text-gray-700 dark:text-white md:text-2xl lg:text-3xl"
-      >
+      <h3 class="text-2xl font-bold text-gray-700 dark:text-white lg:text-3xl">
         {{ project.title }}
       </h3>
-      <p
-        class="md:text-md text-base font-bold text-gray-500 dark:text-gray-50 lg:text-xl"
-      >
+      <p class="text-lg font-bold text-gray-500 dark:text-gray-50 lg:text-xl">
         {{ project.description }}
       </p>
       <button
@@ -100,6 +98,162 @@
       (click)="closeDialog(i)"
       class="fixed inset-0 bg-black opacity-25 dark:bg-gray-900"
     ></div>
+  </div>
+
+  <!-- About -->
+  <div class="relative flex flex-col-reverse lg:flex-row-reverse">
+    <div
+      class="grid h-56 h-fit w-full place-content-center bg-black p-6 sm:h-72 md:px-14 lg:w-2/3 lg:p-16 xl:h-[375.175px] xl:w-3/4"
+    >
+      <h3 class="mb-6 text-2xl font-bold text-white md:hidden lg:text-3xl">
+        About Me
+      </h3>
+      <p class="mx-auto w-full text-justify font-bold leading-7 text-white">
+        I'm Edori, a web developer and tech aficionado who is passionate about
+        creating websites and web apps that conveys intent through beautiful
+        typography, concise design patterns and efficient development practices.
+        I am capable in the use of a number of web development tools including
+        Javascript, Angular, HTML5, CSS, Typescript, NodeJs and more.
+      </p>
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <div
+      id="card-content"
+      class="hidden flex-col gap-2 p-6 leading-relaxed md:flex lg:w-1/3 lg:justify-center lg:gap-3 lg:pl-0 xl:w-1/4"
+    >
+      <h3
+        class="text-2xl font-extrabold text-gray-700 dark:text-white lg:text-3xl"
+      >
+        About Me
+      </h3>
+    </div>
+  </div>
+
+  <!-- Tech  -->
+  <div class="relative flex flex-col-reverse lg:flex-row-reverse">
+    <div
+      class="grid h-56 w-full place-content-center bg-stone-300 p-6 text-black sm:h-72 md:px-14 lg:w-2/3 lg:p-16 xl:h-[375.175px] xl:w-3/4"
+    >
+      <h3 class="mb-6 text-2xl font-bold md:hidden lg:text-3xl">
+        Technologies
+      </h3>
+
+      <!--  -->
+      <div class="grid grid-cols-5 gap-4 sm:gap-8 md:grid-cols-5 md:gap-14">
+        <figure class="logo-container">
+          <img
+            class="logo"
+            src="../../assets/images/icons/html-svgrepo-com.svg"
+            alt="html logo"
+          />
+          <p>HTML5</p>
+        </figure>
+        <!--  -->
+        <figure class="logo-container">
+          <img
+            class="logo"
+            src="../../assets/images/icons/css-3-svgrepo-com.svg"
+            alt="css logo"
+          />
+          <p>CSS</p>
+        </figure>
+        <!--  -->
+        <figure class="logo-container">
+          <img
+            class="logo"
+            src="../../assets/images/icons/js-svgrepo-com.svg"
+            alt="Javascript logo"
+          />
+          <p>JavaScript</p>
+        </figure>
+        <!--  -->
+        <figure class="logo-container">
+          <img
+            class="logo"
+            src="../../assets/images/icons/angular-svgrepo-com.svg"
+            alt="angular logo"
+          />
+          <p>Angular</p>
+        </figure>
+        <!--  -->
+        <figure class="logo-container">
+          <img
+            class="logo"
+            src="../../assets/images/icons/tailwind-css-svgrepo-com.svg"
+            alt="tailwindCSS logo"
+          />
+          <p>TailwindCss</p>
+        </figure>
+        <!--  -->
+        <figure class="logo-container">
+          <img
+            class="logo"
+            src="../../assets/images/icons/nodejs-svgrepo-com.svg"
+            alt="Node js logo"
+          />
+          <p>NodeJs</p>
+        </figure>
+        <!--  -->
+        <figure class="logo-container">
+          <img
+            class="logo"
+            src="../../assets/images/icons/git-svgrepo-com.svg"
+            alt="git logo"
+          />
+          <p>Git</p>
+        </figure>
+        <!--  -->
+        <figure class="logo-container">
+          <img
+            class="logo"
+            src="../../assets/images/icons/mongodb-svgrepo-com.svg"
+            alt="mongoDB logo"
+          />
+          <p>MongoDB</p>
+        </figure>
+        <!--  -->
+        <figure class="logo-container">
+          <img
+            class="logo"
+            src="../../assets/images/icons/react-svgrepo-com.svg"
+            alt="react logo"
+          />
+          <p>ReactJS</p>
+        </figure>
+        <!--  -->
+        <figure class="logo-container">
+          <img
+            class="logo"
+            src="../../assets/images/icons/typescript-svgrepo-com.svg"
+            alt="typescript logo"
+          />
+          <p>TypeScript</p>
+        </figure>
+      </div>
+    </div>
+
+    <div
+      id="card-content"
+      class="hidden flex-col gap-2 p-6 leading-relaxed md:flex lg:w-1/3 lg:justify-center lg:gap-3 lg:pl-0 xl:w-1/4"
+    >
+      <h3
+        class="text-2xl font-extrabold text-gray-700 dark:text-white lg:text-3xl"
+      >
+        Technologies
+      </h3>
+    </div>
   </div>
 </div>
 
@@ -216,3 +370,79 @@
     </div>
   </div> -->
 <!--  -->
+
+<!-- <div class="area">
+        <ul class="circles">
+           https://codepen.io/alvarotrigo/pen/GRvYNax 
+          <li>
+            <fa-icon
+              [icon]="faHtml5"
+              size="lg"
+              class="mx-auto my-6 flex items-center justify-center text-orange-600"
+            ></fa-icon>
+          </li>
+          <li>
+            <fa-icon
+              [icon]="faCss3"
+              size="lg"
+              class="mx-auto my-6 flex items-center justify-center text-blue-400"
+            ></fa-icon>
+          </li>
+          <li>
+            <fa-icon
+              [icon]="faJs"
+              size="lg"
+              class="mx-auto my-6 flex items-center justify-center text-yellow-400"
+            ></fa-icon>
+          </li>
+          <li>
+            <fa-icon
+              [icon]="faAngular"
+              size="2x"
+              class="mx-auto my-6 flex items-center justify-center text-red-400"
+            ></fa-icon>
+          </li>
+          <li>
+            <fa-icon
+              [icon]="faReact"
+              size="lg"
+              class="text-[rgb(97, 218, 251)] mx-auto my-6 flex items-center justify-center"
+            ></fa-icon>
+          </li>
+          <li>
+            <fa-icon
+              [icon]="faGit"
+              size="lg"
+              class="mx-auto my-6 flex items-center justify-center text-red-700"
+            ></fa-icon>
+          </li>
+          <li>
+            <fa-icon
+              [icon]="faBootstrap"
+              size="xs"
+              class="mx-auto my-6 flex items-center justify-center text-purple-500"
+            ></fa-icon>
+          </li>
+          <li>
+            <fa-icon
+              [icon]="faNodeJs"
+              size="lg"
+              class="mx-auto my-6 flex items-center justify-center text-green-500"
+            ></fa-icon>
+          </li>
+          <li>
+            <img
+              class="w-10"
+              src="../../assets/images/tailwind-svgrepo-com.svg"
+              alt="tailwind-logo"
+            />
+          </li>
+          <li>
+            <img
+              class="w-8"
+              src="../../assets/images/mongodb-svgrepo-com.svg"
+              alt="mongodb-logo"
+            />
+          </li>
+        </ul>
+      </div> -->

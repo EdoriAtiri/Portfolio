@@ -5,10 +5,18 @@
 
 @layer components {
   .project_link {
-    @apply relative w-fit after:absolute after:inset-0 after:transform after:-scale-y-50 after:transition-transform after:ease-linear after:duration-300 z-50 after:-z-10;
+    @apply relative z-50 w-fit after:absolute after:inset-0 after:-z-10 after:-scale-y-50 after:transform after:transition-transform after:duration-300 after:ease-linear;
   }
 
   .link_style {
-    @apply relative pl-2 before:w-1 before:h-full before:absolute before:left-0 before:opacity-0 before:hover:opacity-100 before:transition-opacity before:ease-in before:duration-200 before:delay-200;
+    @apply relative pl-2 before:absolute before:left-0 before:h-full before:w-1 before:opacity-0 before:transition-opacity before:delay-200 before:duration-200 before:ease-in before:hover:opacity-100;
+  }
+
+  .logo {
+    @apply h-7 w-7 md:h-10 md:w-10;
+  }
+
+  .logo-container {
+    @apply flex flex-col items-center justify-center gap-1 md:gap-3;
   }
 }

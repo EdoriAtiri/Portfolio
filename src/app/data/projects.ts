@@ -19,7 +19,7 @@ export const Projects: project[] = [
     description: 'Shorten lenghty URL links',
     desktopImage: '../../assets/images/shortly-desktop-.png',
     mobileImage: '../../assets/images/UrlShortener-mobile.png',
-    color: 'bg-stone-200',
+    color: 'bg-purple-200',
     toggle: false,
     live_url: 'https://shortify-ten.vercel.app/',
     github_url: 'https://github.com/EdoriAtiri/shortify',
