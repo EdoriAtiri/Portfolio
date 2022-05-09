@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 import { ProjectService } from '../services/project.service';
 import { project } from '../interfaces/project';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 import {
   trigger,
@@ -52,6 +53,7 @@ import {
 })
 export class MainComponent implements OnInit {
   projects: project[] = [];
+  faArrowDown = faArrowDown;
 
   constructor(private projectService: ProjectService) {}
 
