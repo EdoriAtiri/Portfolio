@@ -1,15 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  faHtml5,
-  faCss3,
-  faJs,
-  faAngular,
-  faBootstrap,
-  faGit,
-  faReact,
-  faNodeJs,
-} from '@fortawesome/free-brands-svg-icons';
-import { Projects } from '../data/projects';
+import * as AOS from 'aos';
+import { ProjectService } from '../services/project.service';
 import { project } from '../interfaces/project';
 
 import {
@@ -60,18 +51,22 @@ import {
   ],
 })
 export class MainComponent implements OnInit {
-  projects: project[] = Projects;
-  faHtml5 = faHtml5;
-  faCss3 = faCss3;
-  faAngular = faAngular;
-  faBootstrap = faBootstrap;
-  faJs = faJs;
-  faGit = faGit;
-  faReact = faReact;
-  faNodeJs = faNodeJs;
-  constructor() {}
+  projects: project[] = [];
 
-  ngOnInit(): void {}
+  constructor(private projectService: ProjectService) {}
+
+  ngOnInit(): void {
+    AOS.init();
+    this.getProjects();
+  }
+
+  getProjects() {
+    this.projectService.getProjects().subscribe({
+      next: (project) => {
+        this.projects = project;
+      },
+    });
+  }
 
   onClickView(item: number) {
     for (let i = 0; i < this.projects.length; i++) {

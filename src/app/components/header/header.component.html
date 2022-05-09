@@ -1,11 +1,25 @@
 <header
-  class="relative mx-auto flex h-96 w-full flex-col justify-between bg-stone-200 dark:bg-gray-800"
+  class="relative mx-auto flex h-96 w-full flex-col justify-between bg-stone-200 dark:bg-gray-800 lg:mt-10"
 >
+  <nav
+    class="absolute right-6 top-6 z-10 flex w-fit items-center justify-evenly gap-4"
+  >
+    <a
+      class="relative text-lg font-semibold before:absolute before:-bottom-2 before:h-0.5 before:w-0 before:bg-gray-800 before:transition-all before:delay-200 before:duration-200 before:ease-in before:hover:w-full"
+      href="#about"
+      >About</a
+    >
+    <a
+      class="relative text-lg font-semibold before:absolute before:-bottom-2 before:h-0.5 before:w-0 before:bg-gray-800 before:transition-all before:delay-200 before:duration-200 before:ease-in before:hover:w-full"
+      href="#contact"
+      >Contact</a
+    >
+  </nav>
   <!-- Logo -->
   <div
-    class="logo-container z-10 w-full pt-4 pl-4 md:bg-white md:pb-4 md:pl-0 dark:md:bg-gray-800 lg:absolute lg:h-full lg:w-fit lg:pr-8"
+    class="logo-container absolute top-0 left-6 z-10 flex w-fit flex-col justify-start pt-4 md:pb-4 md:pl-0 dark:md:bg-gray-800 lg:left-0 lg:h-full lg:w-fit lg:bg-white lg:pt-6 lg:pr-8 lg:dark:bg-gray-800"
   >
-    <a href="#" class="logo text-3xl text-black dark:text-white xl:text-4xl">
+    <a href="#" class="text-3xl dark:text-white xl:text-4xl">
       <span class="font-light">e</span><span class="font-regular">dor</span
       ><span class="font-medium"
         >i<span class="border-b-2 border-gray-800">a</span></span
@@ -15,7 +29,7 @@
   <!--  -->
 
   <p
-    class="z-10 bg-white px-4 pt-4 text-3xl font-bold dark:bg-gray-800 dark:text-white md:bg-transparent md:px-8 md:pb-4 md:text-4xl lg:absolute lg:bottom-10 lg:bg-transparent lg:pl-0 lg:text-5xl"
+    class="absolute bottom-0 z-10 bg-white px-4 pt-4 text-3xl font-bold dark:bg-gray-800 dark:text-white md:bg-white md:px-8 md:pb-4 md:text-4xl lg:bottom-10 lg:bg-transparent lg:pl-0 lg:text-5xl"
   >
     Developing web experiences and having fun in the process
   </p>
