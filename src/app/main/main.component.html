@@ -59,7 +59,7 @@
         {{ project.description }}
       </p>
       <button
-        class="view sm:text-lg lg:text-xl font-bold relative w-fit after:absolute after:inset-0 after:transform after:-scale-y-50 after:transition-transform after:ease-linear after:duration-300 z-50 after:-z-10 dark:text-black after:{{
+        class="view sm:text-lg lg:text-xl font-bold relative w-fit after:absolute after:inset-0 after:transform after:-scale-y-50 after:transition-transform after:ease-linear after:duration-300 z-50 after:-z-10 dark:text-white  after:{{
           project.color
         }}"
         (click)="onClickView(i)"
@@ -88,7 +88,9 @@
           alt=""
       /></a>
       <span
-        class="website absolute bottom-2 text-lg font-bold uppercase dark:text-gray-800 md:bottom-8 xl:bottom-16"
+        class="website absolute bottom-2 text-lg font-bold uppercase dark:text-gray-800 md:bottom-8 xl:bottom-16 after:{{
+          project.color
+        }}"
         >visit website</span
       >
 

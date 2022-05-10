@@ -18,7 +18,7 @@ html {
   }
 
   .logo {
-    @apply h-7 w-7 md:h-10 md:w-10;
+    @apply h-7 w-7 dark:p-2 dark:shadow-sm dark:outline dark:outline-1 dark:outline-white md:h-10 md:w-10;
   }
 
   .logo-container {
