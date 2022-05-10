@@ -7,16 +7,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MainComponent } from './main/main.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ProjectComponent } from './components/project/project.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    MainComponent,
-    FooterComponent,
-    ProjectComponent,
-  ],
+  declarations: [AppComponent, HeaderComponent, MainComponent, FooterComponent],
   imports: [BrowserModule, FontAwesomeModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
