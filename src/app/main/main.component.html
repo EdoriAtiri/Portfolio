@@ -117,14 +117,16 @@
 
     <div
       *ngIf="project.toggle"
-      [@toggleModalBd]="project.toggle ? 'show' : 'hide'"
       (click)="closeDialog(i)"
       class="fixed inset-0 bg-black opacity-25 dark:bg-gray-900"
     ></div>
   </div>
 
   <!-- About -->
-  <div id="about" class="relative flex flex-col-reverse lg:flex-row-reverse">
+  <div
+    id="about"
+    class="relative mb-8 flex flex-col-reverse md:mb-0 lg:flex-row-reverse"
+  >
     <div
       data-aos="zoom-in"
       data-aos-duration="1000"
@@ -173,7 +175,7 @@
   </div>
 
   <!-- Tech  -->
-  <div class="relative flex flex-col-reverse lg:flex-row-reverse">
+  <div class="relative mb-4 flex flex-col-reverse md:mb-0 lg:flex-row-reverse">
     <div
       data-aos="zoom-in"
       data-aos-duration="1000"
@@ -258,7 +260,7 @@
             src="../../assets/images/icons/tailwind-css-svgrepo-com.svg"
             alt="tailwindCSS logo"
           />
-          <p>TailwindCss</p>
+          <p>TailwindCSS</p>
         </figure>
         <!--  -->
         <figure
@@ -273,7 +275,7 @@
             src="../../assets/images/icons/nodejs-svgrepo-com.svg"
             alt="Node js logo"
           />
-          <p>NodeJs</p>
+          <p>NodeJS</p>
         </figure>
         <!--  -->
         <figure

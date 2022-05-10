@@ -12,7 +12,7 @@ header:before {
   position: absolute;
   inset: 0;
   background: #fff;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 @media (prefers-color-scheme: dark) {

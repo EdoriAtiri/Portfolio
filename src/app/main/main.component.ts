@@ -33,22 +33,6 @@ import {
       transition('show => hide', animate('300ms ease-out')),
       transition('hide => show', animate('300ms ease-in')),
     ]),
-    trigger('toggleModalBd', [
-      state(
-        'show',
-        style({
-          opacity: 0.25,
-        })
-      ),
-      state(
-        'hide',
-        style({
-          opacity: 0,
-        })
-      ),
-      transition('show => hide', animate('300ms 150ms ease-out')),
-      transition('hide => show', animate('300ms ease-in')),
-    ]),
   ],
 })
 export class MainComponent implements OnInit {
