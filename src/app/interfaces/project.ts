@@ -3,7 +3,6 @@ export interface project {
   title: string;
   description: string;
   desktopImage: string;
-  mobileImage: string;
   color: string;
   toggle: boolean;
   live_url: string;

@@ -1,6 +1,7 @@
 header {
   /* Photo by Milad Fakurian on Unsplash */
-  background-image: url("../../../assets/images/milad-fakurian-JrMz6hVQeu4-unsplash.jpg");
+  background-image: url("../../../assets/images/milad-fakurian-JrMz6hVQeu4-unsplash.webp");
+  background-color: rgb(231 229 228);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
