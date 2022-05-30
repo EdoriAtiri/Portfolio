@@ -61,9 +61,7 @@
         {{ project.description }}
       </p>
       <button
-        class="view sm:text-lg lg:text-xl font-bold relative w-fit after:absolute after:inset-0 after:transform after:-scale-y-50 after:transition-transform after:ease-linear after:duration-300 z-50 after:-z-10 dark:text-white  after:{{
-          project.color
-        }}"
+        class="view relative z-50 w-fit border-b-4 border-dotted pb-2 font-bold after:absolute after:inset-0 after:-z-10 after:-scale-y-50 after:transform after:transition-transform after:duration-300 after:ease-linear dark:border-white dark:text-white sm:text-lg lg:text-xl"
         (click)="onClickView(i)"
       >
         View Project
@@ -120,7 +118,7 @@
     <div
       *ngIf="project.toggle"
       (click)="closeDialog(i)"
-      class="fixed inset-0 bg-black opacity-25 dark:bg-gray-900"
+      class="fixed inset-0 z-40 bg-black opacity-25 dark:bg-gray-900"
     ></div>
   </div>
 
