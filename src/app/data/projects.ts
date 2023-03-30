@@ -6,7 +6,7 @@ export const Projects: project[] = [
     title: 'Toy URL',
     description:
       'Miniaturize long links into short toy like links. Built with React on the Frontend and Python/Flask/SQLite on the backend',
-    desktopImage: '../../assets/images/toy-url.webp',
+    desktopImage: '../../assets/images/toy_url.webp',
     color: 'bg-blue-200',
     toggle: false,
     live_url: 'https://toy-url.vercel.app/',
