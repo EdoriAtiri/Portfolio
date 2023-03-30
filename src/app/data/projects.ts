@@ -2,6 +2,17 @@ import { project } from '../interfaces/project';
 
 export const Projects: project[] = [
   {
+    id: 8,
+    title: 'Toy URL',
+    description:
+      'Miniaturize long links into short toy like links. Built with React on the Frontend and Python/Flask/SQLite on the backend',
+    desktopImage: '../../assets/images/toy-url.webp',
+    color: 'bg-blue-200',
+    toggle: false,
+    live_url: 'https://toy-url.vercel.app/',
+    github_url: 'https://github.com/EdoriAtiri/Toy-Url',
+  },
+  {
     id: 1,
     title: 'House Marketplace',
     description:
