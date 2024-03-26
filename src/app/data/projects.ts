@@ -5,8 +5,8 @@ export const Projects: project[] = [
     id: 9,
     title: 'AT Monitor',
     description:
-      'Streamline live event and attendance tracking with AT Monitor. Built with MongoDB, Express, React-Vite, RTK, Tailwind and NodeJS.',
-    desktopImage: '../../assets/images/At-Monitor.png',
+      'Streamline live event organization and attendance tracking with AT Monitor. Built with MongoDB, Express, React-Vite, RTK, Tailwind and NodeJS.',
+    desktopImage: '../../assets/images/At-Monitor.webp',
     color: 'bg-blue-500',
     toggle: false,
     live_url: 'https://at-monitor.vercel.app/',
